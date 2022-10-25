@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Master Page</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: '#da373d',
+						},
+					},
+				},
+			}
+		</script>
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<div class="navbar bg-base-100">
+			<div class="flex-1">
+				<a class="btn btn-ghost normal-case text-xl">
+					<img
+						src="./assets/meditation-svgrepo-com.svg"
+						alt="LOGO"
+						width="30px"
+					/>
+					<span class="mr-2"></span> GuruAtoZ</a
+				>
+			</div>
+			<div class="flex-none">
+				<ul class="menu menu-horizontal p-0">
+					<li>
+						<a> <i class="fa-sharp fa-solid fa-house"></i> Home</a>
+					</li>
+					<!-- <li tabindex="0">
+						<a>
+							More
+							<svg
+								class="fill-current"
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+								/>
+							</svg>
+						</a>
+						<ul class="p-2 bg-base-100">
+							<li><a>About</a></li>
+							<li><a>Services</a></li>
+						</ul>
+					</li> -->
+					<li>
+						<a><i class="fa-solid fa-address-card"></i> About</a>
+					</li>
+					<li>
+						<a><i class="fa-sharp fa-solid fa-toolbox"></i>Services</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Landing Page Coming Soon -->
+		<div
+			class="hero min-h-screen"
+			style="background-image: url(https://placeimg.com/640/480/any)"
+		>
+			<div class="hero-overlay bg-opacity-60"></div>
+			<div class="hero-content text-center text-neutral-content">
+				<div class="max-w-md">
+					<h1 class="mb-5 text-6xl font-bold">We Are Coming Soon</h1>
+					<p class="mb-5">
+						Our website is currently undergoing scheduled maintenance. We Should
+						be back shortly. Thank you for your patience
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
